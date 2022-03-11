@@ -9,7 +9,7 @@ int main(void)
 	int i;
 
 	for (i = 97; i < 97 + 26; i++)
-		if (i != (int) 'q' || i != (int) 'e')
+		if (i != (int) 'q' && i != (int) 'e')
 			putchar(i);
 	putchar('\n');
 	return (0);
