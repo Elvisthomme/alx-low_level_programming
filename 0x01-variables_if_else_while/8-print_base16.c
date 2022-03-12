@@ -12,6 +12,7 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(48 + i);
+		i++;
 	}
 	for (i = 97; i < 97 + 6; i++)
 		putchar(i);
