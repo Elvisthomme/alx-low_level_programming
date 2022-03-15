@@ -22,7 +22,7 @@ void jack_bauer(void)
 		}
 			_putchar(58);
 
-		for (minute = 0; minute < 64; miute++)
+		for (minute = 0; minute < 64; minute++)
 		{
 			if (hour < 10)
 			{
