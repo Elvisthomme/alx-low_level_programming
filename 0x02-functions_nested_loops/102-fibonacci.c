@@ -14,13 +14,13 @@ int main(void)
 	curr_fib = 1;
 	while (i < 51)
 	{
+		i++;
 		printf("%d", curr_fib);
 		if (i == 50)
 			continue;
 		printf(", ");
 		prev_fib = curr_fib;
 		curr_fib += prev_fib;
-		i++;
 	}
 	printf("\n");
 	return (0);
