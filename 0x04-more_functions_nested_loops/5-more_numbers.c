@@ -12,7 +12,7 @@ void more_numbers(void)
 	{
 		for (j = 0; j < 15; j++)
 		{
-			if ( i > 9)
+			if (j > 9)
 				_putchar(49);
 			_putchar(48 + (i % 10));
 		}
