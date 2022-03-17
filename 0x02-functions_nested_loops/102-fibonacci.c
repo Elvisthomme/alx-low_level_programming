@@ -16,7 +16,7 @@ int main(void)
 	while (i < 51)
 	{
 		i++;
-		printf("%d", curr_fib);
+		printf("%ld", curr_fib);
 		if (i == 50)
 			continue;
 		printf(", ");
