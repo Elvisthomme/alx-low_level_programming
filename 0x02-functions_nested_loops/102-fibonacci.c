@@ -17,7 +17,7 @@ int main(void)
 	{
 		i++;
 		printf("%ld", curr_fib);
-		if (i == 50)
+		if (i == 51)
 			continue;
 		printf(", ");
 		prev_prev_fib = prev_fib;
