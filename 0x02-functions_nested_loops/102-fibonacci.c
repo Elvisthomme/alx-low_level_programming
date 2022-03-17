@@ -20,8 +20,9 @@ int main(void)
 		if (i == 50)
 			continue;
 		printf(", ");
+		prev_prev_fib = prev_fib;
 		prev_fib = curr_fib;
-		curr_fib += prev_fib;
+		curr_fib = prev_prev_fib + prev_fib;
 	}
 	printf("\n");
 	return (0);
