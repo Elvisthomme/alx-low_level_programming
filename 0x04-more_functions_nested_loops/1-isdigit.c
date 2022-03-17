@@ -2,8 +2,8 @@
 
 /**
  * _isdigit - check for a digit (0 through 9)
- * @c the character
- * Return 1 if c is a digit
+ * @c: the character
+ * Return: 1 if c is a digit
  * Otherwise return 0
  */
 int _isdigit(int c)
