@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	long int prev_prev_fib;
-	long int prev_fib = 1;
-	long int curr_fib = 1;
+	long long int prev_prev_fib;
+	long long int prev_fib = 1;
+	long long int curr_fib = 1;
 	int i;
 
 	i = 1;
