@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	long long int number = 612852475143;
+	long int number = 612852475143;
 	long int i = 3;
 	long int largest_prime = 1;
 
 	while (number != 1)
 	{
-		if (number % i != 0)
+		if (number % i == 0)
 		{
 			number /= i;
 			if (i > largest_prime)
