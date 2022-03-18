@@ -28,15 +28,16 @@ void print_number(int n)
 		positive_value /= 10;
 	}
 	for (i = number_of_digit; i > 0; i--)
-	{
+	{/*print the number starting by his first digit*/
 		divider = 1;
 		j = 1;
 		while (j < i)
-		{
-			number_of_digit *= 10;
+		{/* calculate the power divider = pow(10, i)*/
+			divider *= 10;
 			j++;
 		}
-		_putchar('0' + abs_value / divider);
+		_putchar('0' + abs_value / divider);/*Print the first digit*/
+		/* get the part of the number that we have not print*/
+		abs_value = abs_value - ((abs_value / divider) * divider);
 	}
-	_putchar('\n');
 }
