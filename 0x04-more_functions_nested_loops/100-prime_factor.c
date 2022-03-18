@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long int number = 612852475143;
+	long long int number = 612852475143;
 	long int i = 3;
 	long int largest_prime = 1;
 
