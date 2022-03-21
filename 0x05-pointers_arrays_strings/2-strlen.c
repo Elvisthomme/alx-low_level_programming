@@ -3,7 +3,7 @@
  * @s: the string
  * Return: the length of the string s
  */
-int _strleng(char *s)
+int _strlen(char *s)
 {
 	int counter = 0;
 
