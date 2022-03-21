@@ -7,18 +7,21 @@
 void rev_string(char *s)
 {
 	int counter = 0;
-	int i;
+	int i = 0;
+	int j;
 	char c;
 
 	while (*(s + counter))
 	{
 		counter++;
 	}
-	for (i = counter - 1; i > -1; i--)
+	j = --counter;
+	while (i < j)
 	{
-		c = *(s + counter  - 1 - i);
-		*(s + counter - 1 - i) = *(s + i);
+		c = *(s + j);
+		*(s + j) = *(s + i);
 		*(s + i) = c;
+		i++;
+		j--;
 	}
-	_putchar('\n');
 }
