@@ -6,7 +6,6 @@
 int _atoi(char *s)
 {
 	unsigned int int_val = 0;
-	int power = 1;
 	int i = 0;
 	int c;
 	int check = 0;
@@ -18,8 +17,7 @@ int _atoi(char *s)
 		i++;
 		if ((c >= '0' && c <= '9'))
 		{
-			int_val = int_val * power + c - 48;
-			power *= 10;
+			int_val = int_val * 10 + c - 48;
 			check++;
 		}
 		else if (c == 45)/* the minus sign*/
