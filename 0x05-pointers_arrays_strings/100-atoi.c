@@ -5,11 +5,12 @@
  */
 int _atoi(char *s)
 {
-	long int int_val = 0;
+	unsigned int int_val = 0;
 	int power = 1;
 	int i = 0;
 	int c;
 	int check = 0;
+	int sign = 1;
 
 	while (*(s + i))
 	{
@@ -23,12 +24,12 @@ int _atoi(char *s)
 		}
 		else if (c == 45)/* the minus sign*/
 		{
-			int_val *= -1;
+			sign *= -1;
 		}
 		else if (c == '+')
 			continue;
 		else if (check > 1)
 			break;
 	}
-	return (int_val);
+	return (sign * int_val);
 }
