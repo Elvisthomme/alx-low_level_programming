@@ -5,7 +5,7 @@
  */
 int _atoi(char *s)
 {
-	int int_val = 0;
+	long int int_val = 0;
 	int power = 1;
 	int i = 0;
 	int c;
@@ -23,7 +23,7 @@ int _atoi(char *s)
 		}
 		else if (c == 45)/* the minus sign*/
 		{
-			int_val = -int_val;
+			int_val *= -1;
 		}
 		else if (c == '+')
 			continue;
