@@ -13,7 +13,7 @@ void _puts(char *str)
 	{
 		counter++;
 	}
-	n = (counter - 1) / 2:
+	n = (counter - 1) / 2;
 	while (n < counter)
 	{
 		_putchar(*(str + n));
