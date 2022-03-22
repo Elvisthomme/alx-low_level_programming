@@ -12,11 +12,11 @@ int main(void)
 	long int count = 1;
 
 	curr_fib = 1;
-	while (count != 98)
+	while (count != 101)
 	{
 		printf("%ld", curr_fib);
 		count++;
-		if (count == 98)
+		if (count == 101)
 			continue;
 		printf(", ");
 		prev_prev_fib = prev_fib;
