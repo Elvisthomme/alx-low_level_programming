@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	int prev_prev_fib;
-	int prev_fib = 1;
-	int curr_fib = 1;
-	int count = 97;
+	long int prev_prev_fib;
+	long int prev_fib = 1;
+	long int curr_fib = 1;
+	long int count = 97;
 
 	curr_fib = 1;
 	while (count)
 	{
-		printf("%d", curr_fib);
+		printf("%ld", curr_fib);
 		count--;
-		if(count == 0)
+		if (count == 0)
 			continue;
 		printf(" ,");
 		prev_prev_fib = prev_fib;
