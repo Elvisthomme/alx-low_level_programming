@@ -14,5 +14,5 @@ char *_strcpy(char *dest, char *src)
 	}
 	/* to include the terminating null byte*/
 	*(dest + i) = *(src + i);
-	return (*dest);
+	return (dest);
 }
