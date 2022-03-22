@@ -9,6 +9,7 @@ int _atoi(char *s)
 	int power = 1;
 	int i = 0;
 	int c;
+	int check = 0;
 
 	while (*(s + i))
 	{
@@ -18,11 +19,16 @@ int _atoi(char *s)
 		{
 			int_val = int_val * power + c - 48;
 			power *= 10;
+			check++;
 		}
-		else if (c == '-')
+		else if (c == 45)/* the minus sign*/
 		{
 			int_val = -int_val;
 		}
+		else if (c == '+')
+			continue;
+		else if (check > 1)
+			break;
 	}
 	return (int_val);
 }
