@@ -7,8 +7,8 @@
 void puts2(char *str)
 {
 	int i = 0;
-	
-	if (!*(str))
+
+	if (*(str) != '\0')
 	{
 		_putchar(*(str));
 		for (i = 2; *(str + i - 1) && *(str + i); i += 2)
