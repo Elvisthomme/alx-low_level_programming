@@ -16,7 +16,7 @@ int _atoi(char *s)
 		i++;
 		if ((c >= '0' && c <= '9'))
 		{
-			int_val = int_val * power + c;
+			int_val = int_val * power + c - 48;
 			power *= 10;
 		}
 		else if (c == '-')
