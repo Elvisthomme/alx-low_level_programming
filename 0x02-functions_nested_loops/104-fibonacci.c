@@ -18,7 +18,7 @@ int main(void)
 		count--;
 		if (count == 0)
 			continue;
-		printf(" ,");
+		printf(", ");
 		prev_prev_fib = prev_fib;
 		prev_fib = curr_fib;
 		curr_fib = prev_prev_fib + prev_fib;
