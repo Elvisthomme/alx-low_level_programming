@@ -13,7 +13,7 @@ void puts_half(char *str)
 	{
 		counter++;
 	}
-	n = (counter % 2 == 0) ? (counter) / 2 : counter / 2 - 1;
+	n = (counter % 2 == 0) ? (counter) / 2 : (counter - 2) / 2;
 	while (n < counter)
 	{
 		_putchar(*(str + n));
