@@ -31,7 +31,7 @@ void print_times_table(int n)
 				{
 					if (j == 9)
 						continue;
-					_putchar(44);
+					_putchar(',');
 					_putchar(' ');
 				}
 				else
@@ -55,8 +55,9 @@ void print_times_table(int n)
 				}
 				if (j == n)
 					continue;
-				_putchar(44);
+				_putchar(',');
 				_putchar(' ');
+				_putchar('\n')
 			}
 		}
 	_putchar('\n');
