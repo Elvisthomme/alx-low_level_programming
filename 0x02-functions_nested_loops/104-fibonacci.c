@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	long int prev_prev_fib;
-	long int prev_fib = 1;
-	long int curr_fib = 1;
+	int prev_prev_fib;
+	int prev_fib = 1;
+	int curr_fib = 1;
 	int count = 97;
 
 	curr_fib = 1;
@@ -23,6 +23,6 @@ int main(void)
 		prev_fib = curr_fib;
 		curr_fib = prev_prev_fib + prev_fib;
 	}
-	printf("%d\n", sum_even_fib_term);
+	printf("\n");
 	return (0);
 }
