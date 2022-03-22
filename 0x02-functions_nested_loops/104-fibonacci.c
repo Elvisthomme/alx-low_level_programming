@@ -9,15 +9,15 @@ int main(void)
 	long int prev_prev_fib;
 	long int prev_fib = 1;
 	long int curr_fib = 1;
-	long int count = 97;
+	long int count = 1;
 
 	curr_fib = 1;
-	while (count)
+	while (count != 98)
 	{
 		printf("%ld", curr_fib);
-		count--;
-		if (count == 0)
-			break;
+		count++;
+		if (count == 98)
+			continue;
 		printf(", ");
 		prev_prev_fib = prev_fib;
 		prev_fib = curr_fib;
