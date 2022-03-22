@@ -17,7 +17,7 @@ int main(void)
 		printf("%ld", curr_fib);
 		count--;
 		if (count == 0)
-			continue;
+			break
 		printf(", ");
 		prev_prev_fib = prev_fib;
 		prev_fib = curr_fib;
