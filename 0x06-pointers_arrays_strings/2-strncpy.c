@@ -19,12 +19,8 @@ char *_strncpy(char *dest, char *src, int n)
 			*(dest + i) = *(src + j);
 			j++;
 		}
-		else 
-		{
-			j = 0;
-			*(dest + i) = *(src + j);
-			j++;
-		}
+		else
+			*(dest + i) = "";
 		i++;
 	}
 	/* to include the terminating null byte*/
