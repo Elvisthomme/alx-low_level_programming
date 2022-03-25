@@ -7,7 +7,7 @@ char *leet(char *str)
 {
 	int i = 0;
 	int j;
-	char char_arr[] = {'A', 'a', 'E', 'e', '0', 'o', 'l', 'L', 't', 'T'};
+	char char_arr[] = {'A', 'a', 'E', 'e', 'O', 'o', 'l', 'L', 't', 'T'};
 	char code_arr[] = {'4', '4', '3', '3', '0', '0', '1', '1', '7', '7'};
 	char *c;
 
