@@ -8,12 +8,23 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
+	int j = 0;
 
 	if (n == 0)
 		return (dest);
 	while (*(src + i) && i < n - 1)
 	{
-		*(dest + i) = *(src + i);
+		if (*(dest + j))
+		{
+			*(dest + i) = *(src + j);
+			j++;
+		}
+		else 
+		{
+			j = 0;
+			*(dest + i) = *(src + j);
+			j++;
+		}
 		i++;
 	}
 	/* to include the terminating null byte*/
