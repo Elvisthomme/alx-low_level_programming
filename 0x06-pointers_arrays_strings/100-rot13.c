@@ -12,12 +12,11 @@ char *rot13(char *str)
 	{
 		if (*(str + i) >= 'A' && *(str + i) <= 'Z')
 			*(str + i) = ((*(str + i) - 65 + 13) % 26) + 65;
-		else
-			while (*(str + i) >= 'a' && *(str + i) <= 'z')
-			{
-				*(str + i) = ((*(str + i) - 97 + 13) % 26) + 97;
-				break;
-			}
+		while (*(str + i) >= 'a' && *(str + i) <= 'z')
+		{
+			*(str + i) = ((*(str + i) - 97 + 13) % 26) + 97;
+			break;
+		}
 		i++;
 	}
 	return (str);
