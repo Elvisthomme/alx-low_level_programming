@@ -13,8 +13,8 @@ char *_strncpy(char *dest, char *src, int n)
 	if (n == 0)
 		return (dest);
 	while (i < n)
-	{	
-		*(dest + i) = *(src + j);	
+	{
+		*(dest + i) = *(src + j);
 		if (*(src + j))
 		{
 			j++;
