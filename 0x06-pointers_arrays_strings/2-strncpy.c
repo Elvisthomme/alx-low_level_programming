@@ -20,7 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 			j++;
 		}
 		else
-			*(dest + i) = "";
+			*(dest + i) = '';
 		i++;
 	}
 	/* to include the terminating null byte*/
