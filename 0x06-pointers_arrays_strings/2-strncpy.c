@@ -12,18 +12,15 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (n == 0)
 		return (dest);
-	while (*(src + i) && i < n - 1)
-	{
-		if (*(dest + j))
+	while (i < n)
+	{	
+		*(dest + i) = *(src + j);	
+		if (*(src + j))
 		{
-			*(dest + i) = *(src + j);
 			j++;
 		}
-		else
-			*(dest + i) = '';
 		i++;
 	}
 	/* to include the terminating null byte*/
-	*(dest + i) = *(src + i);
 	return (dest);
 }
