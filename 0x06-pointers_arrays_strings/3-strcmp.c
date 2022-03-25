@@ -5,7 +5,7 @@
  * Description: compare @s1 and s2
  * and return a negative, null or positive value
  *
- * Return: -15, 0, or 15 respectively if @s1 less, equal or greather than @s2
+ * Return: -13, 0, or 13 respectively if @s1 less, equal or greather than @s2
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -18,12 +18,12 @@ int _strcmp(char *s1, char *s2)
 			i++;
 		else if (!*(s2 + i) || *(s1 + i) > *(s2 + i))
 		{
-			result = 15;
+			result = 13;
 			break;
 		}
 		else if (*(s1 + i) < *(s2 + i))
 		{
-			result = -15;
+			result = -13;
 			break;
 		}
 	}
