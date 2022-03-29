@@ -19,6 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 			j++;
 		}
 		i++;
+		j = 0;
 	}
 	return (counter);
 }
