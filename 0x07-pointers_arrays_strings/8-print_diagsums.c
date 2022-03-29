@@ -3,6 +3,7 @@
 /**
   * print_diagsums - print the chessboard
   * @a: the two dimension array of chessboard
+  * @size: the size of the chessboard
   */
 void print_diagsums(int *a, int size)
 {
