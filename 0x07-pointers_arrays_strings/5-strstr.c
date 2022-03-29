@@ -12,6 +12,8 @@ char *_strstr(char *haystack, char *needle)
 	int j = 0;
 	int find_index = 0;
 
+	if (!*needle)
+		return (haystack);
 	while (*(haystack + i))
 	{
 		if (*(haystack + i) == *needle)
