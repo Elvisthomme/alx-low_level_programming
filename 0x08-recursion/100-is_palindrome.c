@@ -11,7 +11,7 @@ int _strlen_recursion(char *s)
 }
 
 /**
-  * check_palindrome check if a string is a palindrome
+  * check_palindrome - check if a string is a palindrome
   * @s: the string to test
   * @b: the first caracter to test
   * @e: the last caracter to test
@@ -28,7 +28,7 @@ int check_palindrome(char *s, int b, int e)
 
 
 /**
-  * is_palindrome check if a string is a palindrome
+  * is_palindrome - check if a string is a palindrome
   * @s: the string to test
   * Return: 1 if n is a palindrome, 0 else
   */
