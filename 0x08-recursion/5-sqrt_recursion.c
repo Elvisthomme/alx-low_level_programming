@@ -6,10 +6,8 @@
  */
 int check_square(int num, int n)
 {
-	if (n < 0 || num < 0)
+	if (num < 0)
 		return (-1);
-	if (n == 0 || n == 1)
-		return (n);
 	if ((num * num) == n)
 		return (num);
 	return (check_square(num - 1, n));
@@ -24,5 +22,11 @@ int check_square(int num, int n)
  */
 int _sqrt_recursion(int n)
 {
+	int num = n / 2 < 46340 ? n / 2 : 46340;
+
+	if (n < 0)
+		return (-1);
+	if (n == 0 || n == 1)
+		return (n);
 	return (check_square(n / 2, n));
 }
