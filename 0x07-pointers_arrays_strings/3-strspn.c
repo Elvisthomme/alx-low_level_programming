@@ -1,8 +1,8 @@
 /**
   * _strspn - get the length of a prefix substring
   * @s: the initial segment
-  * @accept: the accept byte
-  * Return: the number of byte of accept in s
+  * @accept: the accepted bytes
+  * Return: the number of bytes of accept in s
   */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -15,7 +15,10 @@ unsigned int _strspn(char *s, char *accept)
 		while (*(s + j))
 		{
 			if (*(accept + i) == *(s + j))
+			{
 				counter++;
+				break
+			}
 			j++;
 		}
 		i++;
