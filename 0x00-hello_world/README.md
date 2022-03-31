@@ -1,4 +1,4 @@
-# Project: 0x00. C - Hello, World
+# Welcome to the Project: 0x00. C - Hello, World
 
 ## Concepts
 > > For this project, students are expected to learn the basic of C language
@@ -11,9 +11,8 @@
 - putchar
 
 ## Learning Objectives
-> > At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+> > After this project I am able to explain to anyone, without the help of Google:
 
-### General
 - Why C programming is awesome
 - Who invented C
 - Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
@@ -33,94 +32,112 @@
 
 #### C: ####
 * Allowed editors: vi, vim, emacs
-* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-* All your files should end with a new line
-* A README.md file at the root of the repo, containing a description of the repository
-* A README.md file, at the root of the folder of this project, containing a description of the project
-* There should be no errors and no warnings during compilation
-* You are not allowed to use system
-* Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+* All the files can be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+* All the files end with a new line
+* There are no errors and no warnings during compilation
+* I am not allowed to use system
+* My code is using the Betty style. It can be checked using betty-style.pl and betty-doc.pl
 
 #### Shell Scripts: ####
 * Allowed editors: vi, vim, emacs
-* All your scripts will be tested on Ubuntu 20.04 LTS
-* All your scripts should be exactly two lines long ($ wc -l file should print 2)
-* All your files should end with a new line
-* The first line of all your files should be exactly #!/bin/bash
+* All my scripts can be tested on Ubuntu 20.04 LTS
+* All my scripts are exactly two lines long ($ wc -l file should print 2)
+* All my files end with a new line
+* The first line of all my files are exactly #!/bin/bash
 
 
 
 ## Tasks
 
-<h3 align='right'>advanced</h3>
-##### 0.proprocessor #####
->> Write a script that runs a C file through the preprocessor and save the result into another file.
+<h3 align='right'>mandatory</h3>
 
-> * The C file name will be saved in the variable $CFILE
+##### 0.proprocessor #####
+>> This script runs a C file through the preprocessor and save the result into another file.
+
+> * The C file name will be saved in the variable _$CFILE_
 > * The output should be saved in the file c
-File: [0-preprocessor][1]
+> * File: [0-preprocessor][1]
 
 ##### 1.Compiler #####
-> > Write a script that compiles a C file but does not link.
+> > This script compiles a C file but does not link.
 
-> * The C file name will be saved in the variable $CFILE
+> * The C file name will be saved in the variable _$CFILE_
 > * The output file should be named the same as the C file, but with the extension .o instead of .c.
-File: [1.compiler][2]
+> * File: [1.compiler][2]
 
 ##### 2.Assembler #####
-> > Write a script that generates the assembly code of a C code and save it in an output file.
+> > This script generates the assembly code of a C code and save it in an output file.
 
-> * The C file name will be saved in the variable $CFILE
+> * The C file name will be saved in the variable _$CFILE_
 > * The output file should be named the same as the C file, but with the extension .s instead of .c.
-File: [1.assembler][3]
+> * File: [1.assembler][3]
 
 ##### 3.Name #####
-> > Write a script that compiles a C file and creates an executable named cisfun.
+> > This script compiles a C file and creates an executable named _cisfun_.
 
-> * The C file name will be saved in the variable $CFILE
-File: [3-name][4]
+> * The C file name will be saved in the variable _$CFILE_
+> * File: [3-name][4]
 
 ##### 4.Hello, puts #####
-> > Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+> > This program prints exactly _"Programming is like building a multilingual puzzle_, followed by a new line.
 
 > * Use the function puts
-> * You are not allowed to use printf
-> * Your program should end with the value 0
-File: [4-puts.c][5]
+> * I am not allowed to use printf
+> * The program end with the value 0
+> * File: [4-puts.c][5]
 
 ##### 5.Hello, printf #####
-> > Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+> > This C program prints exactly _with proper grammar, but the outcome is a piece of art,_, followed by a new line.
 
 > * Use the function printf
-> * You are not allowed to use the function puts
-> * Your program should return 0
-> * Your program should compile without warning when using the -Wall gcc option
-File: [5-printf.c][6]
+> * I am not allowed to use the function puts
+> * The program should return 0
+> * The program compile without warning when using the -Wall gcc option
+> * File: [5-printf.c][6]
 
 ##### 6. Size is not grandeur, and territory does not make a nation #####
-> > Write a C program that prints the size of various types on the computer it is compiled and run on.
+> > This C program prints the size of various types on the computer it is compiled and run on.
 
-> * You should produce the exact same output as in the example
+> * It produce exactly this output
+```bash
+$ gcc 6-size.c -m32 -o size32 2> /tmp/32
+$ gcc 6-size.c -m64 -o size64 2> /tmp/64
+$ ./size32
+Size of a char: 1 byte(s)
+Size of an int: 4 byte(s)
+Size of a long int: 4 byte(s)
+Size of a long long int: 8 byte(s)
+Size of a float: 4 byte(s)
+$ ./size64
+Size of a char: 1 byte(s)
+Size of an int: 4 byte(s)
+Size of a long int: 8 byte(s)
+Size of a long long int: 8 byte(s)
+Size of a float: 4 byte(s)
+$ echo $?
+0
+```
 > * Warnings are allowed
-> * Your program should return 0
+> * The program return 0
 > * You might have to install the package libc6-dev-i386 on your Linux (Vagrant) to test the -m32 gcc optionhh
-File: [6-size.c][7]
+> * File: [6-size.c][7]
 
 <h3 align='right'>advanced</h3>
-##### 7.Intel #####
-> > Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
 
-> * The C file name will be saved in the variable $CFILE.
+##### 7.Intel #####
+> > This script generates the assembly code (Intel syntax) of a C code and save it in an output file.
+
+> * The C file name will be saved in the variable _$CFILE_.
 > * The output file should be named the same as the C file, but with the extension .s instead of .c.
-File: [100-intel][8]
+> * File: [100-intel][8]
 
 ##### 8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity #####
-> > Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
+> > This C program prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
 
-> * You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
-> * Your program should return 1
-> * Your program should compile without any warnings when using the -Wall gcc option
-File: [101-quote.c][9]
+> * I am not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+> * The program return 1
+> * The program compile without any warnings when using the -Wall gcc option
+> * File: [101-quote.c][9]
 
 [1]: 0-preprocessor
 [2]: 1-compiler
