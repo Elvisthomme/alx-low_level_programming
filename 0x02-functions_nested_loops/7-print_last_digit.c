@@ -8,9 +8,12 @@
 int print_last_digit(int number)
 {
 	int last_digit;
-	
+
 	if (number == -2147483648)
+	{
 		_putchar('0' + 8);
+		return (8);
+	}
 	else if (number < 0)
 		last_digit = -number % 10;
 	else
