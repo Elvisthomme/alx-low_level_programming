@@ -17,7 +17,13 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		abs_value = positive_value = -n;
+		if (n ==  -2147483648)
+		{
+			_putchar('0' + 2);
+			abs_value = 147483648;
+		}
+		else
+			abs_value = positive_value = -n;
 	}
 	else
 		abs_value = positive_value = n;
