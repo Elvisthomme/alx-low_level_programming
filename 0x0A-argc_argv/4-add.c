@@ -86,7 +86,8 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		return (print_error());
+		_putchar('0');
+		_putchar('\n');
 	}
 
 	for (i = 1; i < argc; i++)
