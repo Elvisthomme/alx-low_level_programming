@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 	int i = 0;
 
 	UNUSED(argc);
-	while (argv[0] + i)
+	while (*(argv[0] + i))
 	{
-		_putchar(argv[0] + i);
+		_putchar(*(argv[0] + i));
 		i++;
 	}
 	_putchar('\n');
