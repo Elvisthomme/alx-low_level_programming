@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num = argc;
+	int num = argc - 1;
 	int n = 1;
 	int divider;
 	int i;
