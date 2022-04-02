@@ -8,8 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
-
 	UNUSED(argc);
 	puts(argv[0]);
 	return (0);
