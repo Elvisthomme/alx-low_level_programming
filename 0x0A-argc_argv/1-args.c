@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		num /= 10;
 
 	}
-	num = argc;
+	num = argc - 1;
 	for (i = n; i > 0; i--)
 	{
 		divider = 1;
