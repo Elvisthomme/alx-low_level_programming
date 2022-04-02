@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 			j++;
 		}
 		_putchar('0' + value / divider);
-		num = num - ((abs_value / divider) * divider);
+		num = num - ((num / divider) * divider);
 	}
 	_putchar('\n');
 	return (0);
