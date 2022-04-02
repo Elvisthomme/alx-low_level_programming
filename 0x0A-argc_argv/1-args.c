@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num, value = argc;
+	int num = argc;
 	int n = 1;
 	int divider;
 	int i;
@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 		num /= 10;
 
 	}
+	num = argc;
 	for (i = n; i > 0; i--)
 	{
 		divider = 1;
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
 			divider *= 10;
 			j++;
 		}
-		_putchar('0' + value / divider);
+		_putchar('0' + num / divider);
 		num = num - ((num / divider) * divider);
 	}
 	_putchar('\n');
