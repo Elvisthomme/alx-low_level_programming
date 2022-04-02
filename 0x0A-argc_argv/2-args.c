@@ -13,13 +13,7 @@ int main(int argc, char *argv[])
 
 	while (j < argc)
 	{
-		i = 0;
-		while (*(argv[j] + i))
-		{
-			_putchar(*(argv[j] + i));
-			i++;
-		}
-		_putchar('\n');
+		puts(argv[j]);
 		j++;
 	}
 	return (0);
