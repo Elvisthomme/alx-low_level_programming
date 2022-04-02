@@ -52,15 +52,15 @@ void print_number(int n)
 /**
  * tr_str_int - convert a string to and integer
  * @str: a pointer to the string
- * Return: the integer value of the string
+ * Return: the integer value of the string 
  */
 int tr_str_int(char *str)
 {
 	int i = 0;
 	int sign = 1;
 	int result = 0;
-	
-	if(*(str) == '-')
+
+	if (*(str) == '-')
 	{
 		sign = -1;
 		i++;
