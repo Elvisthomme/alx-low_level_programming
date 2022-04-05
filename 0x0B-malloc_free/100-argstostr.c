@@ -27,11 +27,9 @@ char *argstostr(int ac, char **av)
 			}
 	}
 
-	con = malloc(sizeof(char) * (t + 1));
-
+	con = malloc(sizeof(char) * (t + ac + 1));
 	if (con == NULL)
 		return (NULL);
-
 	for (i = 0; i < ac; i++)
 	{
 		j = 0;
@@ -49,6 +47,4 @@ char *argstostr(int ac, char **av)
 	}
 	*(con + k) = '\0';
 	return (con);
-
-
 }
