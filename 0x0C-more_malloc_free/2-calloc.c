@@ -4,6 +4,7 @@
  * _calloc - allocate memory for an array using malloc
  * @nmemb: the number of member
  * @size: the size of the one member
+ * Return: a pointer to the memory or NULL when malloc fail
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
