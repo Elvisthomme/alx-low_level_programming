@@ -1,4 +1,4 @@
-#include "3-cal.h"
+#include "3-calc.h"
 
 /**
  * main - perform simple operations
@@ -16,20 +16,20 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (argv[2] != "+" && argv[2] != "-"
-	&& argv[2] != "*" && argv[2] != "%")
+	if (strcmp(argv[2], "+") != 0 && strcmp(argv[2], "-") != 0
+	&& strcmp(argv[2], "*") != 0 && strcmp(argv[2], "%") != 0) 
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((argv[2] == "/" || argv[2] == "%") && atoi(argv[3]) == 0)
+	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && atoi(argv[3]) == 0)
 	{
 		printf("Error");
 		exit(100);
 	}
 
-	result = (*get_op_func(argv[3]))(atoi(argv[2], argv[4]));
+	result = (*get_op_func(argv[3]))(atoi(argv[2]), atoi(argv[4]));
 	printf("%d\n", result);
 	return (0);
 }
