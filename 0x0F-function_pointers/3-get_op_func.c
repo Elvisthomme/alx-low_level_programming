@@ -15,7 +15,7 @@ int (*get_op_func(char *s))(int, int)
 	{"%", op_mod},
 	{NULL, NULL}
 	};
-	int i = atoi(s % 6);
+	int i = atoi(s) % 6;
 
 	return (ops[i].f);
 }
