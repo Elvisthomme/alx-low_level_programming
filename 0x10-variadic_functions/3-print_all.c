@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
   * print_all - print anything
   * @format: a list of type of arguments passed to the function
@@ -11,9 +10,6 @@ void print_all(const char * const format, ...)
 	char *str;
 	unsigned int test = 0, i = 0;
 
-
-	if (format == NULL)
-		return;
 	va_start(ap, format);
 	while (*(format + i))
 	{
@@ -44,7 +40,7 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		if (*(format + i + 1) && test)
-			printf(", ");	
+			printf(", ");
 		i++;
 		test = 0;
 	}
