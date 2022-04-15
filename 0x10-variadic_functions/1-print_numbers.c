@@ -68,7 +68,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		num = va_arg(ap, int);
 		print_number(num);
-		if (i != n - 1 && separator)
+		if (i != n - 1 && separator != NULL)
 		{
 			while (*(separator + j))
 			{
