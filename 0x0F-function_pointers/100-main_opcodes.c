@@ -7,6 +7,7 @@
 void print_2_last_hexa(unsigned int num)
 {
 	int a = 0, b = 0;
+
 	while (num)
 	{
 		b = a;
