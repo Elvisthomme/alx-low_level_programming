@@ -26,8 +26,8 @@ void print_2_last_hexa(unsigned int num)
   */
 int main(int ac, char *av[])
 {
-	int n, i, number, l;
-	int *code;
+	int n, i, l;
+	int *code, number;
 	char *c;
 	int (*m)(int, char**);
 
@@ -50,9 +50,8 @@ int main(int ac, char *av[])
 	m = main;
 	for (i = 0; i < n; i++)
 	{
-		code = (int *) *(m + i + 1);
-		number = *code;
-		print_2_last_hexa(number);
+		code = (int *) *(m + i);
+		print_2_last_hexa(*code);
 		if (i != n - 1)
 			printf(" ");
 	}
