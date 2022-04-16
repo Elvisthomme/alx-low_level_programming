@@ -1,5 +1,6 @@
-/** print_dog - print a struct dog
-  *@d: a pointer to the dog struct
+/**
+  * print_dog - print a struct dog
+  * @d: a pointer to the dog struct
   */
 void print_dog(struct dog *d)
 {
