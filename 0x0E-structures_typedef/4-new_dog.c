@@ -9,7 +9,7 @@
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog, d;
+	dog_t *d;
 	char *n, *o;
 	int i;
 
@@ -49,9 +49,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 			*(o + i) = *(owner + i);
 		}
 	}
-	d.name = n;
-	d.owner = o;
-	d.age = age;
-	dog = &d;
-	return (dog);
+	d = malloc(sizeof(dog_t));
+	d->name = n;
+	d->owner = o;
+	d->age = age;
+	return (d);
 }
