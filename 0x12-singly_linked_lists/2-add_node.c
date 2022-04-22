@@ -8,7 +8,7 @@
   */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t node;
+	list_t *node;
 	int i = 0;
 	char *string;
 
@@ -24,5 +24,5 @@ list_t *add_node(list_t **head, const char *str)
 	node->len = i;
 	node->next = *head;
 	*head = node;
-	return (&node);
+	return (node);
 }
