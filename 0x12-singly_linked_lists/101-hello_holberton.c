@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(void)
+int display(void)
 {
 	printf("Hello, Holberton");
 }
