@@ -3,21 +3,25 @@
 	.section	.rodata.str1.1,"aMS",@progbits,1
 .LC0:
 	.string	"Hello, Holberton"
-	.text
+	.section	.text.startup,"ax",@progbits
 	.p2align 4
-	.globl	display
-	.type	display, @function
-display:
+	.globl	main
+	.type	main, @function
+main:
 .LFB23:
 	.cfi_startproc
 	endbr64
-	leaq	.LC0(%rip), %rsi
-	movl	$1, %edi
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 16
+	leaq	.LC0(%rip), %rdi
+	call	puts@PLT
 	xorl	%eax, %eax
-	jmp	__printf_chk@PLT
+	addq	$8, %rsp
+	.cfi_def_cfa_offset 8
+	ret
 	.cfi_endproc
 .LFE23:
-	.size	display, .-display
+	.size	main, .-main
 	.ident	"GCC: (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0"
 	.section	.note.GNU-stack,"",@progbits
 	.section	.note.gnu.property,"a"
