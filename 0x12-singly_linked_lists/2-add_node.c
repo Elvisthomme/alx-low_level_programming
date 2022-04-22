@@ -9,17 +9,19 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *node;
+	int i = 0;
 	char *string;
 
 	if (!head)
 		return (NULL);
 	string = strdup(str);
-	if (!string)
-		return (NULL);
+	while (*(str + i))
+		i++;
 	node = malloc(sizeof(node));
 	if (!node)
 		return (NULL);
 	node->str = string;
+	node->len = i;
 	node->next = *head;
 	*head = node;
 	return (node);
