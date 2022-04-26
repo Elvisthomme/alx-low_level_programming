@@ -16,7 +16,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (head && h && node)
 	{
 		node->n = n;
-		while (idx && ((idx--) - 1))
+		if (!idx)
+		{
+			node->next = h;
+			head = &node;
+			return (node);
+		}
+		while ((idx--) - 1)
 		{
 			if (h->next)
 				h = h->next;
