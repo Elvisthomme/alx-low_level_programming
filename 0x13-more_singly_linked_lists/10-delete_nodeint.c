@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
-  * delete_nodeint_at_index - delete the node at the specifier index of a listint_t
+  * delete_nodeint_at_index - delete the node at an index of a listint_t
   * @head: a pointer to the head pointer
   * @index: the index of the node
-  * Returns: 1 if it succeeded, -1 if it failed
+  * Return: 1 if it succeeded, -1 if it failed
   */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
