@@ -2,7 +2,7 @@
 /**
   * add_node - add a new node at the beginning of a listint_t
   * @head: a poiter to the head pointer
-  * @n: the value to add to list_t
+  * @node: the node to add to list_t
   * Return: the pointer to the new element or NULL if it failed
   */
 listint_t *add_node(listint_t **head, listint_t *node)
