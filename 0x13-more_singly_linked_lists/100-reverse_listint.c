@@ -23,7 +23,7 @@ listint_t *add_node(listint_t **head, listint_t *node)
   */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *h, *hh, *result;
+	listint_t *h, *hh, *result = NULL;
 
 	if (!head)
 		return (NULL);
