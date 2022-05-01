@@ -24,10 +24,11 @@ listint_t *add_node(listint_t **head, listint_t *node)
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *h, *hh, *result;
+
 	if (!head)
 		return (NULL);
 	h = *head;
-	*head = NULL; 
+	*head = NULL;
 	while (h)
 	{
 		hh = h->next;
