@@ -12,13 +12,13 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (*(b + i))
 	{
-		pow2 = pow2 << 1;
+		pow2 *= 2;
 		i++;
 	}
 	i = 0;
 	while (*(b + i))
 	{
-		pow2 = pow2 >> 1;
+		pow2 /= 2;
 		if (*(b + i) == '1')
 		{
 			result += pow2;
