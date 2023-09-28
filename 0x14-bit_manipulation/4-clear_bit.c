@@ -8,7 +8,7 @@
   */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int i = 1, cp_n = *n;
+	unsigned long int i = 1, cp_n;
 	unsigned int j = 0;
 
 	if (!n)
