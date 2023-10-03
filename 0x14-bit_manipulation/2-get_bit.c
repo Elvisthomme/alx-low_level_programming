@@ -8,17 +8,19 @@
   */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int i = 1, cp_n = n;
-	unsigned int r, j;
+	unsigned int bit, j = 0;
+	unsigned long int mask, cp_n = n;
 
 	while (cp_n)
 	{
 		j++;
 		cp_n >>= 1;
 	}
-	if (index > j - 1)
+
+	if (index >= j)
 		return (-1);
-	i <<= (index);
-	r = (n & i) >> (index);
-	return (r);
+
+	mask = 1UL << index;
+	bit = (n & mask) >> index;
+	return (bit);
 }
